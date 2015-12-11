@@ -14,4 +14,4 @@ RUN chmod -R 777 /tt-rss/cache/js
 RUN chmod -R 777 /tt-rss/feed-icons
 RUN chmod -R 777 /tt-rss/lock
 USER www-data
-CMD ["php","/tt-rss/update.php","--daemon"]	 
+entrypoint ["php","/tt-rss/update.php","--daemon"]
